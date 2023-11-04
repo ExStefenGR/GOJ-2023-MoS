@@ -329,19 +329,7 @@
         321,
         322,
         323,
-        324,
-        325,
-        326,
-        327,
-        328,
-        329,
-        330,
-        331,
-        332,
-        333,
-        334,
-        335,
-        336
+        324
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -14657,7 +14645,7 @@
     {
       "Annotation": "PreprocessJS Build/Build/Build.loader.js",
       "DisplayName": "PreprocessJS Build.loader",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='C\\x3a/Users/Stefen/source/repos/Game\\x2dJam\\x2d2023\\x2dTBC/Kaktos studios/Build/Build/Build.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Kaktos studios'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build.data.gz'\" \"FRAMEWORK_FILENAME='Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.12f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Build.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='C\\x3a/Users/Stefen/source/repos/Game\\x2dJam\\x2d2023\\x2dTBC/Kaktos studios/Build/Build/Build.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Kaktos studios'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1280\" \"HEIGHT=720\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build.data.gz'\" \"FRAMEWORK_FILENAME='Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.12f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='Build.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -14671,9 +14659,9 @@
     {
       "Annotation": "PreprocessJS Build/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='C\\x3a/Users/Stefen/source/repos/Game\\x2dJam\\x2d2023\\x2dTBC/Kaktos studios/Build/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Kaktos studios'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build.data.gz'\" \"FRAMEWORK_FILENAME='Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.12f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Build.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html'\"  \"locals.outputPath='C\\x3a/Users/Stefen/source/repos/Game\\x2dJam\\x2d2023\\x2dTBC/Kaktos studios/Build/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Kaktos studios'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=1280\" \"HEIGHT=720\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build.data.gz'\" \"FRAMEWORK_FILENAME='Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.12f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"PRODUCT_DESCRIPTION=''\" \"LOADER_FILENAME='Build.loader.js'\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal/index.html"
       ],
       "Outputs": [
         "Build/index.html"
@@ -14681,152 +14669,6 @@
       "AllowUnexpectedOutput": true,
       "Env": [],
       "DebugActionIndex": 323
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/favicon.ico",
-      "DisplayName": "Copying favicon.ico",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/favicon.ico"
-      ],
-      "Outputs": [
-        "Build/TemplateData/favicon.ico"
-      ],
-      "DebugActionIndex": 324
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/fullscreen-button.png",
-      "DisplayName": "Copying fullscreen-button.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/fullscreen-button.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/fullscreen-button.png"
-      ],
-      "DebugActionIndex": 325
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/MemoryProfiler.png",
-      "DisplayName": "Copying MemoryProfiler.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/MemoryProfiler.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/MemoryProfiler.png"
-      ],
-      "DebugActionIndex": 326
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/progress-bar-empty-dark.png",
-      "DisplayName": "Copying progress-bar-empty-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-dark.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/progress-bar-empty-dark.png"
-      ],
-      "DebugActionIndex": 327
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/progress-bar-empty-light.png",
-      "DisplayName": "Copying progress-bar-empty-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-empty-light.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/progress-bar-empty-light.png"
-      ],
-      "DebugActionIndex": 328
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/progress-bar-full-dark.png",
-      "DisplayName": "Copying progress-bar-full-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-dark.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/progress-bar-full-dark.png"
-      ],
-      "DebugActionIndex": 329
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/progress-bar-full-light.png",
-      "DisplayName": "Copying progress-bar-full-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/progress-bar-full-light.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/progress-bar-full-light.png"
-      ],
-      "DebugActionIndex": 330
-    },
-    {
-      "Annotation": "PreprocessJS Build/TemplateData/style.css",
-      "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='C\\x3a/Users/Stefen/source/repos/Game\\x2dJam\\x2d2023\\x2dTBC/Kaktos studios/Build/TemplateData/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Kaktos studios'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Build.data.gz'\" \"FRAMEWORK_FILENAME='Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.12f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Build.loader.js'\"",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
-      ],
-      "Outputs": [
-        "Build/TemplateData/style.css"
-      ],
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 331
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/unity-logo-dark.png",
-      "DisplayName": "Copying unity-logo-dark.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-dark.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/unity-logo-dark.png"
-      ],
-      "DebugActionIndex": 332
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/unity-logo-light.png",
-      "DisplayName": "Copying unity-logo-light.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/unity-logo-light.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/unity-logo-light.png"
-      ],
-      "DebugActionIndex": 333
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/webgl-logo.png",
-      "DisplayName": "Copying webgl-logo.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webgl-logo.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/webgl-logo.png"
-      ],
-      "DebugActionIndex": 334
-    },
-    {
-      "Annotation": "CopyFiles Build/TemplateData/webmemd-icon.png",
-      "DisplayName": "Copying webmemd-icon.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/webmemd-icon.png"
-      ],
-      "Outputs": [
-        "Build/TemplateData/webmemd-icon.png"
-      ],
-      "DebugActionIndex": 335
     },
     {
       "Annotation": "Player",
@@ -14842,22 +14684,10 @@
         316,
         321,
         322,
-        323,
-        324,
-        325,
-        326,
-        327,
-        328,
-        329,
-        330,
-        331,
-        332,
-        333,
-        334,
-        335
+        323
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 336
+      "DebugActionIndex": 324
     }
   ],
   "FileSignatures": [
@@ -15176,7 +15006,7 @@
       "Filter": "*.js"
     },
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default",
+      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Minimal",
       "Recurse": 1
     },
     {
@@ -15225,7 +15055,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 336
+          "Player": 324
         }
 ,  "DefaultNodes": [
     0
