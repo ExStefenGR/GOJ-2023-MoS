@@ -177,6 +177,7 @@ UnityEngine.Internal.InputUnsafeUtility::GetButtonDown__Unmanaged
 UnityEngine.Internal.InputUnsafeUtility::GetAxis
 UnityEngine.Internal.InputUnsafeUtility::GetAxisRaw__Unmanaged
 UnityEngine.Internal.InputUnsafeUtility::GetAxis__Unmanaged
+UnityEngine.LayerMask::NameToLayer
 UnityEngine.Light::get_useColorTemperature
 UnityEngine.Light::get_bounceIntensity
 UnityEngine.Light::get_colorTemperature
@@ -347,7 +348,9 @@ UnityEngine.RenderTexture::GetTemporary_Internal_Injected
 UnityEngine.RenderTexture::get_dimension
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.Rigidbody::AddForce_Injected
-UnityEngine.Rigidbody::MovePosition_Injected
+UnityEngine.Rigidbody::get_velocity_Injected
+UnityEngine.Rigidbody::set_position_Injected
+UnityEngine.Rigidbody::set_velocity_Injected
 UnityEngine.ScalableBufferManager::get_heightScaleFactor
 UnityEngine.ScalableBufferManager::get_widthScaleFactor
 UnityEngine.SceneManagement.Scene::GetIsLoadedInternal

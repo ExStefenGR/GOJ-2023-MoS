@@ -561,9 +561,7 @@
           },
           {
             "name": "MeshCollider",
-            "scenes": [
-              "Assets/Scenes/Stage-One.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },

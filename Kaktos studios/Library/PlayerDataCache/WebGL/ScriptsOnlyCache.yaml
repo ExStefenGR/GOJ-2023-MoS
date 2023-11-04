@@ -72,8 +72,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 72
@@ -927,7 +925,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 3fba23b870143d12caf730bf20a5bb6c
+      Hash: 08bd91f537101701794652d99e10a408
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
