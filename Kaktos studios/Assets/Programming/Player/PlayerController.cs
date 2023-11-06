@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private float horizontalInput;
     private int wallJumpCount;
-    [SerializeField] private int lastWallID = -1;
+    private int lastWallID = -1;
     private bool isGrounded;
     private bool isOnWall;
     private Collision lastWallCollision;
@@ -76,17 +76,14 @@ public class PlayerController : MonoBehaviour
     private void PerformWallJump(Collision collision)
     {
         // Factor to adjust the vertical force during wall jump. 
-        // Less than 1 reduces the upward force, greater than 1 increases it.
         rb.AddForce(jumpForce * wallJumpVerticalFactor * Vector3.up, ForceMode.Impulse);
 
         // Add the force away from the wall.
-        // Using the collision contact's normal to determine the direction away from the wall.
         if (collision.contactCount > 0)
         {
             Vector3 forceAwayFromWall = -collision.contacts[0].normal; // get the opposite direction of the normal
 
             // Adjusting the wall jump force. 
-            // Less than 1 makes the player move less away from the wall, greater than 1 increases it.
             float adjustedWallJumpForce = wallJumpForce * 0.5f;
             rb.AddForce(forceAwayFromWall * adjustedWallJumpForce, ForceMode.Impulse);
         }
@@ -96,14 +93,20 @@ public class PlayerController : MonoBehaviour
         wallJumpCount--;
     }
 
-
     void OnCollisionStay(Collision collision)
     {
+        // Check if the player is colliding with the ground.
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            isGrounded = true;
-            wallJumpCount = maxWallJumps;
-            lastWallID = -1; // Reset last wall ID
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                if (Vector3.Angle(contact.normal, Vector3.up) < 45) // Angle to check
+                {
+                    isGrounded = true;
+                    lastWallID = -1; // Reset last wall ID
+                    break;
+                }
+            }
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
@@ -126,7 +129,6 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
 
-        // When exiting a collision with a wall, set isOnWall to false.
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             if (collision.gameObject.GetInstanceID() == lastWallID)
