@@ -932,7 +932,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0593b4416757d37b2ac418773469efbe
+      Hash: 14be5dedc7a7cea28ebb2a9ae12d5369
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1047,4 +1047,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/Stage-One.unity
-  playerPath: /home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Build/Build
+  playerPath: /home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Build

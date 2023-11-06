@@ -10124,6 +10124,7 @@ Math_Round_mB530CF218F9F19E1B24262B07EE4F5A365D60DDB	System.Double System.Math::
 Math_Sign_mC342EFA64DCA2E65BCF71F1206E5DB609758FC66	System.Int32 System.Math::Sign(System.Int64)	mscorlib
 NULL	System.Void System.Math::ThrowMinMaxException(T,T)	mscorlib
 Math_Abs_m9AC832833620E36FDADACC7664F431DC274F0F48	System.Single System.Math::Abs(System.Single)	mscorlib
+Math_Acos_mF08CED1B5D17698A5E0CE0818239197CE779C11A	System.Double System.Math::Acos(System.Double)	mscorlib
 Math_Atan_m653A85096EA3E38D6B5998337232B82A3548EAC7	System.Double System.Math::Atan(System.Double)	mscorlib
 Math_Ceiling_m1DD5C3B6154AA4BD9FE95186C26E47129BC900A4	System.Double System.Math::Ceiling(System.Double)	mscorlib
 Math_Exp_mCADA4910AF1A8E8415D2F28776C3A3895E15AF59	System.Double System.Math::Exp(System.Double)	mscorlib
@@ -19181,6 +19182,8 @@ Vector3_Equals_mB4BE43D5986864F5C22B919F2957E0309F10E3B4	System.Boolean UnityEng
 Vector3_Equals_mEDEAF86793D229455BBF9BA5B30DDF438D6CABC1	System.Boolean UnityEngine.Vector3::Equals(UnityEngine.Vector3)	UnityEngine.CoreModule
 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F	UnityEngine.Vector3 UnityEngine.Vector3::Normalize(UnityEngine.Vector3)	UnityEngine.CoreModule
 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07	UnityEngine.Vector3 UnityEngine.Vector3::get_normalized()	UnityEngine.CoreModule
+Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52	System.Single UnityEngine.Vector3::Dot(UnityEngine.Vector3,UnityEngine.Vector3)	UnityEngine.CoreModule
+Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D	System.Single UnityEngine.Vector3::Angle(UnityEngine.Vector3,UnityEngine.Vector3)	UnityEngine.CoreModule
 Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B	System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)	UnityEngine.CoreModule
 Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D	System.Single UnityEngine.Vector3::get_magnitude()	UnityEngine.CoreModule
 Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8	System.Single UnityEngine.Vector3::get_sqrMagnitude()	UnityEngine.CoreModule
