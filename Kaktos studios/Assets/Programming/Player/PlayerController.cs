@@ -127,13 +127,11 @@ public class PlayerController : MonoBehaviour
         }
 
         // When exiting a collision with a wall, set isOnWall to false.
-        // If this is the last wall the player was attached to, reset the wall ID.
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             if (collision.gameObject.GetInstanceID() == lastWallID)
             {
                 isOnWall = false;
-                lastWallID = -1; // Reset last wall ID, allowing the next wall collision to be considered new
             }
         }
     }
