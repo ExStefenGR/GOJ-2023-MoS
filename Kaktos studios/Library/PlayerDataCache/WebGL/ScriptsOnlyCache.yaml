@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - OptimizedVisibilityScript
     - PlayerController
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
@@ -85,17 +86,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 3610}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 4710}
+      Script: {instanceID: 3614}
     - Class: 114
-      Script: {instanceID: 4856}
+      Script: {instanceID: 4714}
     - Class: 114
-      Script: {instanceID: 7160}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 7198}
+      Script: {instanceID: 7164}
+    - Class: 114
+      Script: {instanceID: 7202}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -103,8 +106,6 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -325,6 +326,12 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OptimizedVisibilityScript
+  - hash:
+      serializedVersion: 2
       Hash: a4d905db69ca7f45f45458ae380fb66f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -415,7 +422,7 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 747284d692f6c45bae4955ed655ed04c
+      Hash: aea064e6f4a58195de027fda2eef8999
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshPro
@@ -925,7 +932,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 08bd91f537101701794652d99e10a408
+      Hash: 0593b4416757d37b2ac418773469efbe
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1040,4 +1047,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/Stage-One.unity
-  playerPath: C:/Users/Stefen/source/repos/Game-Jam-2023-TBC/Kaktos studios/Build
+  playerPath: /home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Build/Build
