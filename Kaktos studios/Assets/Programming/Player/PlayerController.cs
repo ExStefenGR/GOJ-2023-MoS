@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -6,14 +7,17 @@ public class PlayerController : MonoBehaviour
     //Player Navigation Logic
     [SerializeField] private float speed = 5.0f;  // Movement speed
     [SerializeField] private float jumpForce = 7.0f;  // Jump force
+    [SerializeField] private float airControlFactor = 0.6f;
     [SerializeField] private float wallJumpForce = 0.125f; // WallJump Force
     [SerializeField] private float wallJumpVerticalFactor = 0.75f;
     [SerializeField] private int maxWallJumps = 1;  // Maximum wall jumps before touching the groun
 
+
+    private List<int> wallIDs = new();
+
     private Rigidbody rb;
     private float horizontalInput;
     private int wallJumpCount;
-    private int lastWallID = -1;
     private bool isGrounded;
     private bool isOnWall;
     private Collision lastWallCollision;
@@ -56,20 +60,23 @@ public class PlayerController : MonoBehaviour
     }
     private void PerformMovement()
     {
+        float actualSpeed = isGrounded ? speed : (speed * airControlFactor); // airControlFactor is a value less than 1 to reduce air control
 
-        // Use AddForce to move the player based on input and speed.
-        Vector3 force = new(horizontalInput * speed, 0f, 0f);
-        rb.AddForce(force, ForceMode.VelocityChange);
+        Vector3 force = new(horizontalInput * actualSpeed, 0f, 0f);
+        // Apply force only if on ground or not pressing against the wall
+        if (isGrounded || !isOnWall)
+        {
+            rb.AddForce(force, ForceMode.VelocityChange);
+        }
 
-        // Clamp the velocity to ensure that it doesn't exceed the desired speed.
-        rb.velocity = new Vector3(Mathf.Clamp(rb.velocity.x, -speed, speed), rb.velocity.y, rb.velocity.z);
+        float clampedX = Mathf.Clamp(rb.velocity.x, -speed, speed);
+        rb.velocity = new Vector3(clampedX, rb.velocity.y, rb.velocity.z);
     }
+
 
     private void PerformJump()
     {
-        // Perform the jump action.
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        // Reset grounded status after jumping.
         isGrounded = false;
     }
 
@@ -81,7 +88,7 @@ public class PlayerController : MonoBehaviour
         // Add the force away from the wall.
         if (collision.contactCount > 0)
         {
-            Vector3 forceAwayFromWall = -collision.contacts[0].normal; // get the opposite direction of the normal
+            Vector3 forceAwayFromWall = -collision.contacts[0].normal; // Get the opposite direction of the normal
 
             // Adjusting the wall jump force. 
             float adjustedWallJumpForce = wallJumpForce * 0.5f;
@@ -98,25 +105,20 @@ public class PlayerController : MonoBehaviour
         // Check if the player is colliding with the ground.
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            foreach (ContactPoint contact in collision.contacts)
-            {
-                if (Vector3.Angle(contact.normal, Vector3.up) < 45) // Angle to check
-                {
-                    isGrounded = true;
-                    lastWallID = -1; // Reset last wall ID
-                    break;
-                }
-            }
+            isGrounded = true;
+            wallIDs.Clear();
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-
             lastWallCollision = collision;
-            // Prevent clinging to the same wall
-            if (collision.gameObject.GetInstanceID() != lastWallID)
+
+            int currentWallID = collision.gameObject.GetInstanceID();
+            // Add the wall ID to the list if not already present
+            if (!wallIDs.Contains(currentWallID))
             {
+                wallIDs.Add(currentWallID);
                 isOnWall = true;
-                lastWallID = collision.gameObject.GetInstanceID(); // Store the current wall ID
+                // Reset wall jump count when hitting a new wall
                 wallJumpCount = maxWallJumps;
             }
         }
@@ -128,13 +130,9 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
         }
-
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-            if (collision.gameObject.GetInstanceID() == lastWallID)
-            {
-                isOnWall = false;
-            }
+            isOnWall = false;
         }
     }
 
