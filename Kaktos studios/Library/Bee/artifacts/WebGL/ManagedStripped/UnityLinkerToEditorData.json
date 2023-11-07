@@ -79,9 +79,7 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [
-              "Assets/Scenes/Stage-One.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -163,7 +161,9 @@
           },
           {
             "name": "LightingSettings",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Stage-One.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -351,14 +351,18 @@
           },
           {
             "name": "Texture",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Stage-One.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Stage-One.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {

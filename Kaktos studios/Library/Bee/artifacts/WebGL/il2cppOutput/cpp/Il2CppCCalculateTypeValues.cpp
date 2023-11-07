@@ -15372,13 +15372,14 @@ struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95  : public Mono
 {
 	float ___speed;
 	float ___jumpForce;
+	float ___airControlFactor;
 	float ___wallJumpForce;
 	float ___wallJumpVerticalFactor;
 	int32_t ___maxWallJumps;
+	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___wallIDs;
 	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb;
 	float ___horizontalInput;
 	int32_t ___wallJumpCount;
-	int32_t ___lastWallID;
 	bool ___isGrounded;
 	bool ___isOnWall;
 	Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* ___lastWallCollision;
