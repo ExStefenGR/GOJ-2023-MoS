@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float airControlFactor = 0.6f;
     [SerializeField] private float wallJumpForce = 0.125f; // WallJump Force
     [SerializeField] private float wallJumpVerticalFactor = 0.75f;
-    [SerializeField] private int maxWallJumps = 1;  // Maximum wall jumps before touching the groun
+    [SerializeField] private int maxWallJumps = 1;  // Maximum wall jumps before touching the ground
 
     //stage one stuff
     private bool isZoomingOut = false;
@@ -155,13 +155,14 @@ public class PlayerController : MonoBehaviour
             rb.position = lastCheckpointPosition;
             rb.velocity = Vector3.zero;
         }
-        else if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
         {
-            // Access the ZoomOutTrigger component on the other GameObject
-            if (other.TryGetComponent<ZoomOutTrigger>(out var zoomOutTrigger))
+            if (other.TryGetComponent<ZoomOutTrigger>(out var zoomOutTrigger) && !zoomOutTrigger.IsTriggered)
             {
-                // Start the coroutine with the specified FOV from the trigger
-                StartCoroutine(ZoomOutEffect(zoomOutTrigger.TargetFOV, zoomOutTrigger.TargetDuration, zoomOutTrigger.TargetDistance));
+                if (zoomOutTrigger.ActivateZoom()) // Only proceed if the zoom wasn't previously triggered
+                {
+                    StartCoroutine(ZoomOutEffect(zoomOutTrigger.TargetFOV, zoomOutTrigger.TargetDuration, zoomOutTrigger.TargetDistance));
+                }
             }
         }
     }
@@ -176,7 +177,7 @@ public class PlayerController : MonoBehaviour
         isZoomingOut = true;
         float initialFOV = cam.fieldOfView;
         Vector3 initialPosition = cam.transform.localPosition;
-        Vector3 targetPosition = initialPosition + new Vector3(0, 0, -TargetDistance); // Moving back along local Z-axis
+        Vector3 targetPosition = initialPosition + new Vector3(0, 0, -TargetDistance); // local Z-axis
         float elapsed = 0.0f;
 
         while (elapsed < TargetDuration)
