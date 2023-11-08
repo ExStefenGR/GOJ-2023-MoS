@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 962685181193387440}
   - component: {fileID: 3642076990538410346}
+  - component: {fileID: 4886306358757137685}
   m_Layer: 9
   m_Name: ZoomOutTrigger
   m_TagString: Untagged
@@ -53,3 +54,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 6, z: 1}
   m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &4886306358757137685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601632558384725070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d115f8de0c9ea7f9ab3b2184f46cedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFOV: 60
+  zoomOutDuration: 2

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XaedQ/FnOF/k3rE9HA6FxrHPEjidPfYGje73Mwi84Vk45b21oQzA3rXpg6kTtTdRmdkgEVr9qmYISJR2vBIHiQ==",
+  "dgSpecHash": "I2Jviw7EjeVytQ07FfxeHiqKZY0CtmqVDu6Pq2wpx/b0GJqMTkIm2lNgwykV4faQB2E1ZsyLFCuvuy/XC5vOBQ==",
   "success": true,
-  "projectFilePath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Assembly-CSharp.csproj",
+  "projectFilePath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Timeline.Editor.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
