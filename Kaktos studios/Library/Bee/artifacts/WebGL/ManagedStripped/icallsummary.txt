@@ -51,6 +51,7 @@ UnityEngine.Camera::get_projectionMatrix_Injected
 UnityEngine.Camera::get_rect_Injected
 UnityEngine.Camera::get_worldToCameraMatrix_Injected
 UnityEngine.Camera::set_depthTextureMode
+UnityEngine.Camera::set_fieldOfView
 UnityEngine.Camera::set_nonJitteredProjectionMatrix_Injected
 UnityEngine.Camera::set_projectionMatrix_Injected
 UnityEngine.Camera::set_useJitteredProjectionMatrixForTransparentRendering
@@ -121,6 +122,7 @@ UnityEngine.GameObject::SendMessage
 UnityEngine.GameObject::SetActive
 UnityEngine.GameObject::set_layer
 UnityEngine.GameObject::GetComponent
+UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::Internal_AddComponentWithType
 UnityEngine.GameObject::CreatePrimitive
 UnityEngine.GameObject::get_transform

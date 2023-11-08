@@ -22,13 +22,20 @@ extern void PlayerController_PerformWallJump_m36A826A6FBD3DBC298D3CCE470AA652F17
 extern void PlayerController_OnCollisionStay_m1DCD5D8E99C72E2B5DE2E2F828C9C3504E31DE22 (void);
 extern void PlayerController_OnCollisionExit_m4DF3784586ED7D4C4E7E053117AE5406FD71A559 (void);
 extern void PlayerController_OnTriggerEnter_mF2704872AEA62333341DCBEA2831320C385701D1 (void);
+extern void PlayerController_ZoomOutEffect_mE6118C9830AA2145A123EB34ECF83AE215719F8A (void);
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
+extern void U3CZoomOutEffectU3Ed__28__ctor_m2351DD02A7C14D1DAC3BFAEF47FB1ADF3AE3EB04 (void);
+extern void U3CZoomOutEffectU3Ed__28_System_IDisposable_Dispose_m6DC7DFF1EAB84FF950A9C4AE39868B5FFCBBF47E (void);
+extern void U3CZoomOutEffectU3Ed__28_MoveNext_m66D7D81F72C35913F7B551A03E2806B1DC3A123D (void);
+extern void U3CZoomOutEffectU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9FC4AB2B4D509656FE4785D0CD85DD63AC7E7CF8 (void);
+extern void U3CZoomOutEffectU3Ed__28_System_Collections_IEnumerator_Reset_m6E43E469F76C95AC7061C4F474D079C2961B1D76 (void);
+extern void U3CZoomOutEffectU3Ed__28_System_Collections_IEnumerator_get_Current_mFCCFF42B20008EABBF9AC8194B64D05E96DD7312 (void);
 extern void OptimizedVisibilityScript_Start_mE68025142971B337AA9FCD5320A85501A95BC9D1 (void);
 extern void OptimizedVisibilityScript_Update_m6977314CEB1B0B87DBBAC8DB2BDE19F0FEE171F5 (void);
 extern void OptimizedVisibilityScript__ctor_m870DFE721A86C15BEF18BBEE72CBFE6C0D5CBE71 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[16] = 
+static Il2CppMethodPointer s_methodPointers[23] = 
 {
 	PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF,
 	PlayerController_Update_m1F4051EB5BCBCCE5EEE2E3E49B7E278C3B14EC33,
@@ -40,14 +47,21 @@ static Il2CppMethodPointer s_methodPointers[16] =
 	PlayerController_OnCollisionStay_m1DCD5D8E99C72E2B5DE2E2F828C9C3504E31DE22,
 	PlayerController_OnCollisionExit_m4DF3784586ED7D4C4E7E053117AE5406FD71A559,
 	PlayerController_OnTriggerEnter_mF2704872AEA62333341DCBEA2831320C385701D1,
+	PlayerController_ZoomOutEffect_mE6118C9830AA2145A123EB34ECF83AE215719F8A,
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
+	U3CZoomOutEffectU3Ed__28__ctor_m2351DD02A7C14D1DAC3BFAEF47FB1ADF3AE3EB04,
+	U3CZoomOutEffectU3Ed__28_System_IDisposable_Dispose_m6DC7DFF1EAB84FF950A9C4AE39868B5FFCBBF47E,
+	U3CZoomOutEffectU3Ed__28_MoveNext_m66D7D81F72C35913F7B551A03E2806B1DC3A123D,
+	U3CZoomOutEffectU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9FC4AB2B4D509656FE4785D0CD85DD63AC7E7CF8,
+	U3CZoomOutEffectU3Ed__28_System_Collections_IEnumerator_Reset_m6E43E469F76C95AC7061C4F474D079C2961B1D76,
+	U3CZoomOutEffectU3Ed__28_System_Collections_IEnumerator_get_Current_mFCCFF42B20008EABBF9AC8194B64D05E96DD7312,
 	OptimizedVisibilityScript_Start_mE68025142971B337AA9FCD5320A85501A95BC9D1,
 	OptimizedVisibilityScript_Update_m6977314CEB1B0B87DBBAC8DB2BDE19F0FEE171F5,
 	OptimizedVisibilityScript__ctor_m870DFE721A86C15BEF18BBEE72CBFE6C0D5CBE71,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[16] = 
+static const int32_t s_InvokerIndices[23] = 
 {
 	1372,
 	1372,
@@ -59,7 +73,14 @@ static const int32_t s_InvokerIndices[16] =
 	1139,
 	1139,
 	1139,
+	1340,
 	1372,
+	1129,
+	1372,
+	1312,
+	1340,
+	1372,
+	1340,
 	1372,
 	1372,
 	1372,
@@ -70,7 +91,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	16,
+	23,
 	s_methodPointers,
 	0,
 	NULL,

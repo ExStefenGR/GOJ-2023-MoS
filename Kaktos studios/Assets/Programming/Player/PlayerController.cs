@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -12,10 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float wallJumpVerticalFactor = 0.75f;
     [SerializeField] private int maxWallJumps = 1;  // Maximum wall jumps before touching the groun
 
+    //stage one stuff
+    [SerializeField] private float zoomOutFOV = 60.0f; // Target FOV for zooming out
+    [SerializeField] private float zoomOutDuration = 2.0f; // Duration of the zoom out effect
+    private bool isZoomingOut = false;
 
     private List<int> wallIDs = new();
 
     private Rigidbody rb;
+    private Camera cam;
     private float horizontalInput;
     private int wallJumpCount;
     private bool isGrounded;
@@ -28,6 +34,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        cam = GetComponentInChildren<Camera>(); // This will find the Camera component in the children of the GameObject.
         wallJumpCount = maxWallJumps;
         lastCheckpointPosition = transform.position;
     }
@@ -57,6 +64,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+
     }
     private void PerformMovement()
     {
@@ -149,5 +157,32 @@ public class PlayerController : MonoBehaviour
             rb.position = lastCheckpointPosition;
             rb.velocity = Vector3.zero;
         }
+        if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
+        {
+            StartCoroutine(ZoomOutEffect());
+        }
+    }
+
+    IEnumerator ZoomOutEffect()
+    {
+        if (isZoomingOut) // Check if the zoom out effect is already running
+        {
+            yield break; // Exit the coroutine early
+        }
+
+        isZoomingOut = true; // Set the flag to true as the effect is now running
+        float initialFOV = cam.fieldOfView;
+        float elapsed = 0.0f;
+
+        while (elapsed < zoomOutDuration)
+        {
+            elapsed += Time.deltaTime;
+            float newFOV = Mathf.Lerp(initialFOV, zoomOutFOV, elapsed / zoomOutDuration);
+            cam.fieldOfView = newFOV;
+            yield return null;
+        }
+
+        cam.fieldOfView = zoomOutFOV; // Ensure the FOV is set to the target at the end
+        isZoomingOut = false; // Reset the flag once the effect is finished
     }
 }

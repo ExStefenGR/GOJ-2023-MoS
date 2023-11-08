@@ -246,6 +246,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_set_depthTextureMode();
 		Register_UnityEngine_Camera_set_depthTextureMode();
 
+		//System.Void UnityEngine.Camera::set_fieldOfView(System.Single)
+		void Register_UnityEngine_Camera_set_fieldOfView();
+		Register_UnityEngine_Camera_set_fieldOfView();
+
 		//System.Void UnityEngine.Camera::set_nonJitteredProjectionMatrix_Injected(UnityEngine.Matrix4x4&)
 		void Register_UnityEngine_Camera_set_nonJitteredProjectionMatrix_Injected();
 		Register_UnityEngine_Camera_set_nonJitteredProjectionMatrix_Injected();
@@ -593,6 +597,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
 		void Register_UnityEngine_GameObject_GetComponent();
 		Register_UnityEngine_GameObject_GetComponent();
+
+		//UnityEngine.Component UnityEngine.GameObject::GetComponentInChildren(System.Type,System.Boolean)
+		void Register_UnityEngine_GameObject_GetComponentInChildren();
+		Register_UnityEngine_GameObject_GetComponentInChildren();
 
 		//UnityEngine.Component UnityEngine.GameObject::Internal_AddComponentWithType(System.Type)
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();

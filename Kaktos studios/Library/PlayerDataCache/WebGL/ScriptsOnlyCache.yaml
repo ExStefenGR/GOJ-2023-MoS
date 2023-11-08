@@ -932,7 +932,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e6ccec2e7feefc65074aec26ea4a3195
+      Hash: 0f41e6a79687668a1566db96659c40a1
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
