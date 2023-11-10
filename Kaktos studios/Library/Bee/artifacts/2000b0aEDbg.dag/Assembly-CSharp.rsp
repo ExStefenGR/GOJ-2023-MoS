@@ -339,6 +339,7 @@
 "Assets/Programming/PrefabCode/MovingPlatformController.cs"
 "Assets/Programming/World/Global/MapManager.cs"
 "Assets/Programming/World/Stage1/ZoomOutTrigger.cs"
+"Assets/Programming/World/Stage2/WallCrush.cs"
 -langversion:9.0
 
 /deterministic

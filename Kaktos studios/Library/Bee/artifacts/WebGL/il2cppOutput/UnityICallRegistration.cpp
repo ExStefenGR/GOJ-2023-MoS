@@ -570,6 +570,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_GetComponentsInternal();
 		Register_UnityEngine_GameObject_GetComponentsInternal();
 
+		//System.Boolean UnityEngine.GameObject::CompareTag(System.String)
+		void Register_UnityEngine_GameObject_CompareTag();
+		Register_UnityEngine_GameObject_CompareTag();
+
 		//System.Boolean UnityEngine.GameObject::get_activeSelf()
 		void Register_UnityEngine_GameObject_get_activeSelf();
 		Register_UnityEngine_GameObject_get_activeSelf();
@@ -605,6 +609,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Component UnityEngine.GameObject::Internal_AddComponentWithType(System.Type)
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
+
+		//UnityEngine.Component UnityEngine.GameObject::TryGetComponentInternal(System.Type)
+		void Register_UnityEngine_GameObject_TryGetComponentInternal();
+		Register_UnityEngine_GameObject_TryGetComponentInternal();
 
 		//UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
 		void Register_UnityEngine_GameObject_CreatePrimitive();
@@ -2026,6 +2034,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_get_childCount();
 		Register_UnityEngine_Transform_get_childCount();
 
+		//System.Void UnityEngine.Transform::get_localPosition_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_get_localPosition_Injected();
+		Register_UnityEngine_Transform_get_localPosition_Injected();
+
 		//System.Void UnityEngine.Transform::get_lossyScale_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_get_lossyScale_Injected();
 		Register_UnityEngine_Transform_get_lossyScale_Injected();
@@ -2037,6 +2049,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::get_rotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_get_rotation_Injected();
 		Register_UnityEngine_Transform_get_rotation_Injected();
+
+		//System.Void UnityEngine.Transform::set_localPosition_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_set_localPosition_Injected();
+		Register_UnityEngine_Transform_set_localPosition_Injected();
+
+		//System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_set_position_Injected();
+		Register_UnityEngine_Transform_set_position_Injected();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
