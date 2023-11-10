@@ -45,23 +45,23 @@ public class MovingPlatformController : MonoBehaviour
         }
     }
 
-        private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerTransform = collision.transform;
+            collision.transform.SetParent(transform);
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+
+    private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Match the player's x position with the platform
-            Vector3 playerPosition = playerTransform.position;
-            playerTransform.position = new Vector3(transform.position.x, playerPosition.y, playerPosition.z);
+            collision.transform.SetParent(null);
         }
     }
+
 
     private void OnCollisionExit(Collision collision)
     {
