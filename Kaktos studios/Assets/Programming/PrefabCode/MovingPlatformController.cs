@@ -61,14 +61,4 @@ public class MovingPlatformController : MonoBehaviour
             collision.transform.SetParent(null);
         }
     }
-
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            playerTransform = null;
-        }
-    }
-
 }
