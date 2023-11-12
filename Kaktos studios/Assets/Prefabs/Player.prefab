@@ -404,8 +404,6 @@ MonoBehaviour:
   wallJumpForce: 2
   wallJumpVerticalFactor: 0.42
   maxWallJumps: 1
-  zoomOutFOV: 72
-  zoomOutDuration: 5
 --- !u!54 &4969079919831852940
 Rigidbody:
   m_ObjectHideFlags: 0

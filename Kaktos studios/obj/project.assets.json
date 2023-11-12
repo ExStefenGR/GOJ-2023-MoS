@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "Unity.Postprocessing.Runtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Postprocessing.Runtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Postprocessing.Runtime.dll": {}
+        }
+      },
       "UnityEditor.TestRunner/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -53,6 +67,11 @@
     }
   },
   "libraries": {
+    "Unity.Postprocessing.Runtime/1.0.0": {
+      "type": "project",
+      "path": "Unity.Postprocessing.Runtime.csproj",
+      "msbuildProject": "Unity.Postprocessing.Runtime.csproj"
+    },
     "UnityEditor.TestRunner/1.0.0": {
       "type": "project",
       "path": "UnityEditor.TestRunner.csproj",
@@ -76,7 +95,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "Unity.Postprocessing.Runtime >= 1.0.0",
+      "UnityEditor.TestRunner >= 1.0.0",
       "UnityEditor.UI >= 1.0.0",
+      "UnityEngine.TestRunner >= 1.0.0",
       "UnityEngine.UI >= 1.0.0"
     ]
   },
@@ -86,9 +108,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj",
-      "projectName": "Unity.VisualScripting.Core",
-      "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj",
+      "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj",
+      "projectName": "Unity.Postprocessing.Editor",
+      "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj",
       "packagesPath": "/home/stefen/.nuget/packages/",
       "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
       "projectStyle": "PackageReference",
@@ -105,8 +127,17 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
+            "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj": {
+              "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj"
+            },
+            "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
+              "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+            },
             "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
               "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+            },
+            "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+              "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
             },
             "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
               "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
