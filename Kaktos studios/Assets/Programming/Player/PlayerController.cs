@@ -144,11 +144,6 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        /*if (other.CompareTag("Checkpoint"))
-        {
-            lastCheckpointPosition = other.transform.position; // Set the last checkpoint position
-        }
-        */
         if (other.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
             // Move the player to the last checkpoint position
