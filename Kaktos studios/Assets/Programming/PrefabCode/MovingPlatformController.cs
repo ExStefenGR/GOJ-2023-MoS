@@ -9,7 +9,6 @@ public class MovingPlatformController : MonoBehaviour
     [SerializeField] private float waitTime = 1.0f;
     private Vector3 nextPosition;
     private bool isWaiting;
-    private Transform playerTransform;
 
     void Start()
     {
@@ -17,14 +16,13 @@ public class MovingPlatformController : MonoBehaviour
         Vector3 pointAPosition = pointATransform.position;
         Vector3 pointBPosition = pointBTransform.position;
 
-        // Start by moving towards Point A's position
         nextPosition = pointAPosition;
         StartCoroutine(MovePlatform(pointAPosition, pointBPosition));
     }
 
     IEnumerator MovePlatform(Vector3 pointAPosition, Vector3 pointBPosition)
     {
-        while (true) // Loop to move back and forth indefinitely
+        while (true)
         {
             if (!isWaiting && Vector3.Distance(transform.position, nextPosition) > 0.01f)
             {
@@ -34,9 +32,8 @@ public class MovingPlatformController : MonoBehaviour
             }
             else if (!isWaiting)
             {
-                // Start waiting when the target position is reached
                 isWaiting = true;
-                yield return new WaitForSeconds(waitTime); // Wait for the specified time
+                yield return new WaitForSeconds(waitTime);
                 isWaiting = false;
 
                 // Switch the target position
@@ -52,7 +49,6 @@ public class MovingPlatformController : MonoBehaviour
             collision.transform.SetParent(transform);
         }
     }
-
 
     private void OnCollisionExit(Collision collision)
     {

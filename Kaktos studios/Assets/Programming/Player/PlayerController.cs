@@ -46,7 +46,6 @@ public class PlayerController : MonoBehaviour
     {
         PerformMovement();
     }
-
     private void ProcessInput()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -78,14 +77,11 @@ public class PlayerController : MonoBehaviour
         float clampedX = Mathf.Clamp(rb.velocity.x, -speed, speed);
         rb.velocity = new Vector3(clampedX, rb.velocity.y, rb.velocity.z);
     }
-
-
     private void PerformJump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         isGrounded = false;
     }
-
     private void PerformWallJump(Collision collision)
     {
         // Factor to adjust the vertical force during wall jump. 
@@ -105,7 +101,6 @@ public class PlayerController : MonoBehaviour
         isOnWall = false;
         wallJumpCount--;
     }
-
     void OnCollisionStay(Collision collision)
     {
         // Check if the player is colliding with the ground.
@@ -129,7 +124,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
@@ -141,7 +135,6 @@ public class PlayerController : MonoBehaviour
             isOnWall = false;
         }
     }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
@@ -191,5 +184,4 @@ public class PlayerController : MonoBehaviour
         cam.transform.localPosition = targetPosition; // Ensure the camera is set to the target position at the end
         isZoomingOut = false;
     }
-
 }

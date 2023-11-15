@@ -11,14 +11,12 @@ public class ZoomOutTrigger : MonoBehaviour
     public float TargetDuration { get { return zoomOutDuration; } }
     public float TargetDistance { get { return distanceChange; } }
 
-    // Property to encapsulate the isTriggered state
     public bool IsTriggered
     {
         get => isTriggered;
         private set => isTriggered = value;
     }
 
-    // Call this to activate the zoom, if it has not already been triggered
     public bool ActivateZoom()
     {
         if (!IsTriggered)
