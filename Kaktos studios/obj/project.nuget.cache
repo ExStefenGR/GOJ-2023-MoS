@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cjVjj/v2ihEWPWmALX0jVSGefvNZy4IDuvYv/uIi8V+1ESH5rDQzQp7C9kc1ngNyflMPlG5J1sxdqfguggVkQ==",
+  "dgSpecHash": "H2bd0tGcJMezo84pcGZVt33HGOVogLNK7qMZkLv2mxm2JG425e1xinE5l9QVWfPAYhw7dIBv69grNg+CI88b8w==",
   "success": true,
-  "projectFilePath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj",
+  "projectFilePath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

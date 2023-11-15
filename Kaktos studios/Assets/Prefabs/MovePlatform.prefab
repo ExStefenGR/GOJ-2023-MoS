@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89f4ff10af8d7faf686248f7c59ac227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointATransform: {fileID: 0}
-  pointBTransform: {fileID: 0}
+  pointATransform: {fileID: 6578204366054658429}
+  pointBTransform: {fileID: 2527686436431523381}
   speed: 5
   waitTime: 1
