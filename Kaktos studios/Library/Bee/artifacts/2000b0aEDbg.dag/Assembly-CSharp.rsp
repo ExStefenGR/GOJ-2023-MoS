@@ -335,7 +335,11 @@
 -r:"Library/Bee/artifacts/2000b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/home/stefen/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/stefen/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Programming/PlayerController.cs"
+"Assets/Programming/Player/PlayerController.cs"
+"Assets/Programming/PrefabCode/MovingPlatformController.cs"
+"Assets/Programming/World/Global/MapManager.cs"
+"Assets/Programming/World/Stage1/ZoomOutTrigger.cs"
+"Assets/Programming/World/Stage2/WallCrush.cs"
 -langversion:9.0
 
 /deterministic

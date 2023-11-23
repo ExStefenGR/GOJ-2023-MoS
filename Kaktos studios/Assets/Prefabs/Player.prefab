@@ -381,7 +381,7 @@ MeshRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -400,10 +400,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 420
+  airControlFactor: 0.6
   wallJumpForce: 2
   wallJumpVerticalFactor: 0.42
   maxWallJumps: 1
-  lastWallID: -1
 --- !u!54 &4969079919831852940
 Rigidbody:
   m_ObjectHideFlags: 0

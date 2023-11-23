@@ -1,0 +1,333 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj": {}
+  },
+  "projects": {
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj",
+        "projectName": "Unity.Postprocessing.Editor",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Editor.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj",
+        "projectName": "Unity.Postprocessing.Runtime",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.Postprocessing.Runtime.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj",
+        "projectName": "UnityEditor.TestRunner",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
+              },
+              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
+                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj",
+        "projectName": "UnityEngine.TestRunner",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj",
+        "packagesPath": "/home/stefen/.nuget/packages/",
+        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/stefen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
