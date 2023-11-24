@@ -67,4 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFOV: 60
-  zoomOutDuration: 2
+  zoomOutDuration: 7
+  distanceChange: 2.5
+  isTriggered: 0

@@ -25,26 +25,45 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private bool isOnWall;
     private Collision lastWallCollision;
+    private Animator animator;
+
+
+    private Transform quickRigRef;
+    private Transform quickRigGuides;
+    private Transform quickRigCtrlReference;
 
     //Player Spawn/Checkpoint
     private Vector3 lastCheckpointPosition;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInChildren<Rigidbody>();
         cam = GetComponentInChildren<Camera>(); // This will find the Camera component in the children of the GameObject.
+        animator = GetComponentInChildren<Animator>();
         wallJumpCount = maxWallJumps;
         lastCheckpointPosition = transform.position;
+
+        quickRigRef = transform.Find("QuickRigCharacter_Reference");
+        quickRigGuides = transform.Find("QuickRigCharacter_Guides");
+        quickRigCtrlReference = transform.Find("QuickRigCharacter_Ctrl_Reference");
     }
 
     void Update()
     {
+        UpdateAnimator();
         ProcessInput();
+        FlipPlayerDirection();
     }
 
     void FixedUpdate()
     {
+        ApplyAnimatorVelocity();
         PerformMovement();
+    }
+
+    private void UpdateAnimator()
+    {
+        animator.SetFloat("velocity", Mathf.Abs(horizontalInput));
     }
     private void ProcessInput()
     {
@@ -63,6 +82,33 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    private void ApplyAnimatorVelocity()
+    {
+        if (animator)
+        {
+            Vector3 animatorVelocity = animator.deltaPosition / Time.deltaTime;
+            rb.velocity = new Vector3(animatorVelocity.x, rb.velocity.y, animatorVelocity.z); // Keep existing Y velocity
+        }
+    }
+
+    private void FlipPlayerDirection()
+    {
+        // Determine the direction to flip based on the horizontal input.
+        float direction = horizontalInput > 0 ? 90f : horizontalInput < 0 ? -90f : quickRigRef.eulerAngles.y;
+
+        // Apply the rotation to each object if the player is moving
+        if (horizontalInput != 0)
+        {
+            Quaternion newRotation = Quaternion.Euler(0, direction, 0);
+
+            quickRigRef.rotation = newRotation;
+            quickRigGuides.rotation = newRotation;
+            quickRigCtrlReference.rotation = newRotation;
+        }
+    }
+
+
+
     private void PerformMovement()
     {
         float actualSpeed = isGrounded ? speed : (speed * airControlFactor); // airControlFactor is a value less than 1 to reduce air control
@@ -81,6 +127,13 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         isGrounded = false;
+        animator.SetTrigger("jump");
+        animator.SetBool("isJumping", true);
+    }
+    private void Land()
+    {
+        // Set the isJumping boolean to false to trigger the transition to idle or run animation
+        animator.SetBool("isJumping", false);
     }
     private void PerformWallJump(Collision collision)
     {
@@ -108,6 +161,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             wallIDs.Clear();
+            Land(); 
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
@@ -165,7 +219,7 @@ public class PlayerController : MonoBehaviour
         isZoomingOut = true;
         float initialFOV = cam.fieldOfView;
         Vector3 initialPosition = cam.transform.localPosition;
-        Vector3 targetPosition = initialPosition + new Vector3(0, 0, -TargetDistance); // local Z-axis
+        Vector3 targetPosition = initialPosition + new Vector3(TargetDistance, 0, 0); // local Z-axis
         float elapsed = 0.0f;
 
         while (elapsed < TargetDuration)

@@ -2,6 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+<<<<<<< Updated upstream
       "Unity.VisualScripting.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -83,6 +84,8 @@
           "bin/placeholder/Unity.VisualScripting.State.dll": {}
         }
       },
+=======
+>>>>>>> Stashed changes
       "UnityEditor.TestRunner/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -134,6 +137,7 @@
     }
   },
   "libraries": {
+<<<<<<< Updated upstream
     "Unity.VisualScripting.Core/1.0.0": {
       "type": "project",
       "path": "Unity.VisualScripting.Core.csproj",
@@ -159,6 +163,8 @@
       "path": "Unity.VisualScripting.State.csproj",
       "msbuildProject": "Unity.VisualScripting.State.csproj"
     },
+=======
+>>>>>>> Stashed changes
     "UnityEditor.TestRunner/1.0.0": {
       "type": "project",
       "path": "UnityEditor.TestRunner.csproj",
@@ -182,14 +188,16 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+<<<<<<< Updated upstream
       "Unity.VisualScripting.Core >= 1.0.0",
       "Unity.VisualScripting.Core.Editor >= 1.0.0",
       "Unity.VisualScripting.Flow >= 1.0.0",
       "Unity.VisualScripting.Flow.Editor >= 1.0.0",
       "Unity.VisualScripting.State >= 1.0.0",
       "UnityEditor.TestRunner >= 1.0.0",
+=======
+>>>>>>> Stashed changes
       "UnityEditor.UI >= 1.0.0",
-      "UnityEngine.TestRunner >= 1.0.0",
       "UnityEngine.UI >= 1.0.0"
     ]
   },
@@ -200,11 +208,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
       "projectName": "Unity.VisualScripting.State.Editor",
       "projectPath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
       "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj",
+      "projectName": "Unity.Postprocessing.Runtime",
+      "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj",
+      "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -225,6 +241,7 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
+<<<<<<< Updated upstream
             "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
               "projectPath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
             },
@@ -251,6 +268,13 @@
             },
             "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\UnityEngine.UI.csproj": {
               "projectPath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\UnityEngine.UI.csproj"
+=======
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
+            },
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
+>>>>>>> Stashed changes
             }
           }
         }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "EC/Xfk4In9kdaRnhf4AMjAAQkwC40BG6wmGugmkVPhBbhyey5TD9yAwqrTrYtZEypUf0IBqPJ20oe2wenORuKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
+=======
+  "dgSpecHash": "AzJ8M0ZfwhN7xOE4XMV4lgIvAvkSAqoedc4c54nuCJfIm8bnZKErVPZgW7UD1z3P6MgXD1tG62Wo1Q3Ci/3jbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
