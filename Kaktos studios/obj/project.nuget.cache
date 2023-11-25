@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "EC/Xfk4In9kdaRnhf4AMjAAQkwC40BG6wmGugmkVPhBbhyey5TD9yAwqrTrYtZEypUf0IBqPJ20oe2wenORuKA==",
+  "dgSpecHash": "bA2WnP32vJKJxpuosdsN9ddr2S6Kt85L3z9dgegCAuYqRZGUntC6zHr1/Isabs8gHbdskTJC0lElEwHiAoi8tA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\Game-Jam-2023-TBC\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
-=======
-  "dgSpecHash": "AzJ8M0ZfwhN7xOE4XMV4lgIvAvkSAqoedc4c54nuCJfIm8bnZKErVPZgW7UD1z3P6MgXD1tG62Wo1Q3Ci/3jbA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj",
->>>>>>> Stashed changes
+  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Editor.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

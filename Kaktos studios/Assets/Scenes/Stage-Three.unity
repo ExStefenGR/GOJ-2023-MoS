@@ -1487,6 +1487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 510742412933998041, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.184
+      objectReference: {fileID: 0}
     - target: {fileID: 1073799605433491807, guid: 187c8ce7f292560a09624117748a526f, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1506,6 +1510,14 @@ PrefabInstance:
     - target: {fileID: 1073799605433491807, guid: 187c8ce7f292560a09624117748a526f, type: 3}
       propertyPath: m_InnerSpotAngle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421110897063188530, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_Range
+      value: 9.05534
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421110897063188530, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_Intensity
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 2325147674794567839, guid: 187c8ce7f292560a09624117748a526f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1546,6 +1558,30 @@ PrefabInstance:
     - target: {fileID: 2325147674794567839, guid: 187c8ce7f292560a09624117748a526f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492898060577081342, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491462616530109021, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491462616530109021, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491462616530109021, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491462616530109021, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6212019780505412213, guid: 187c8ce7f292560a09624117748a526f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

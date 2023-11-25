@@ -337,10 +337,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Programming/Player/PlayerController.cs"
 "Assets/Programming/PrefabCode/MovingPlatformController.cs"
+"Assets/Programming/World/Global/DoorOpener.cs"
 "Assets/Programming/World/Global/MapManager.cs"
+"Assets/Programming/World/Stage1/SkullFollowPlayer.cs"
 "Assets/Programming/World/Stage1/ZoomOutTrigger.cs"
 "Assets/Programming/World/Stage2/WallCrush.cs"
-"Assets/SkullFollowPlayer.cs"
 -langversion:9.0
 
 /deterministic
