@@ -2138,8 +2138,9 @@ MonoBehaviour:
   wallJumpForce: 0.125
   wallJumpVerticalFactor: 0.75
   maxWallJumps: 1
-  stressDecreaseRate: 1
+  stressIncreaseRate: 1
   stressUpdateSpeed: 2
+  stressLevel: 0
 --- !u!54 &8239887525829986745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3244,6 +3245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8223287815340386847}
   - component: {fileID: 2950647661608714923}
+  - component: {fileID: 2792928226799006696}
   - component: {fileID: 576279469352874687}
   m_Layer: 0
   m_Name: Main
@@ -3344,6 +3346,29 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.002306968, y: 0.008696295, z: 0.00047837198}
     m_Extent: {x: 0.1603869, y: 0.05628068, z: 0.05109623}
   m_DirtyAABB: 0
+--- !u!136 &2792928226799006696
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896174038845637173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.03
+  m_Height: 0.15
+  m_Direction: 1
+  m_Center: {x: -0.00045639032, y: -0.093855344, z: 0.0042281756}
 --- !u!65 &576279469352874687
 BoxCollider:
   m_ObjectHideFlags: 0

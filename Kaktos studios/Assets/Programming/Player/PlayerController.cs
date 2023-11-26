@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void HandlePlayerRespawn()
+    public void HandlePlayerRespawn()
     {
         rb.position = lastCheckpointPosition;
         rb.velocity = Vector3.zero;
