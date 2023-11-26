@@ -427,6 +427,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 2083463545258056636, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2083463545258056636, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2186116305780878325, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -546,6 +554,14 @@ PrefabInstance:
     - target: {fileID: 5600038791498191452, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
       propertyPath: m_BounceIntensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608121258352716006, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
+      propertyPath: stressUpdateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608121258352716006, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
+      propertyPath: stressIncreaseRate
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5710860751322234095, guid: fb7e1640b304db0429ecee042ec86ff1, type: 3}
       propertyPath: m_Name

@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bA2WnP32vJKJxpuosdsN9ddr2S6Kt85L3z9dgegCAuYqRZGUntC6zHr1/Isabs8gHbdskTJC0lElEwHiAoi8tA==",
+  "dgSpecHash": "dZbX5ICwF9mmoG67JvNOgEZwj31Ind3vVYcRAVqqjEPVeh6taQYFCz6YXELBDx8dWsQItfVUEsymYOzsoDoKiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Editor.csproj",
+  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

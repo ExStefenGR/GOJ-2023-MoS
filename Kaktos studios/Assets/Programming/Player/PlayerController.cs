@@ -1,16 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     //Player Navigation Logic
+    public Slider stressBar;
     [SerializeField] private float speed = 5.0f;  // Movement speed
     [SerializeField] private float jumpForce = 7.0f;  // Jump force
     [SerializeField] private float airControlFactor = 0.6f;
     [SerializeField] private float wallJumpForce = 0.125f; // WallJump Force
     [SerializeField] private float wallJumpVerticalFactor = 0.75f;
     [SerializeField] private int maxWallJumps = 1;  // Maximum wall jumps before touching the ground
+    [SerializeField] private float stressIncreaseRate = 1.0f;
+    [SerializeField] private float stressUpdateSpeed = 5f;
+
+    [SerializeField] private float stressLevel = 0f;
+    private int currentStage = 1;
+    private float targetStressLevel = 0f;
+
 
     //stage one stuff
     private bool isZoomingOut = false;
@@ -45,6 +55,38 @@ public class PlayerController : MonoBehaviour
         quickRigRef = transform.Find("QuickRigCharacter_Reference");
         quickRigGuides = transform.Find("QuickRigCharacter_Guides");
         quickRigCtrlReference = transform.Find("QuickRigCharacter_Ctrl_Reference");
+
+        InitializeStressBar();
+        DetermineCurrentStage();
+    }
+
+    private void DetermineCurrentStage()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName == "Stage-One")
+        {
+            currentStage = 1;
+        }
+        else if (sceneName == "Stage-Two")
+        {
+            currentStage = 2;
+        }
+        else if (sceneName == "Stage-Three")
+        {
+            currentStage = 3;
+        }
+        else
+        {
+            // Handle unknown or default case
+            currentStage = 1; // Default to stage 1 or any other default you choose
+        }
+    }
+
+    private void InitializeStressBar()
+    {
+        stressBar.maxValue = 100; // Set this to the maximum stress level
+        stressBar.value = stressLevel; // Initialize with current stress level
     }
 
     void Update()
@@ -52,12 +94,89 @@ public class PlayerController : MonoBehaviour
         UpdateAnimator();
         ProcessInput();
         FlipPlayerDirection();
+
+        if (stressLevel != targetStressLevel)
+        {
+            stressLevel = Mathf.Lerp(stressLevel, targetStressLevel, stressUpdateSpeed * Time.deltaTime);
+            UpdateStressUI();
+        }
+
+        UpdateStress(); // Update stress based on the current stage
+
+        // Check if stress level reaches or exceeds 100 and handle player respawn
+        if (Mathf.Approximately(stressLevel, 100f) || stressLevel > 99.99f)
+        {
+            HandlePlayerRespawn();
+        }
     }
+
+
+
 
     void FixedUpdate()
     {
         ApplyAnimatorVelocity();
         PerformMovement();
+    }
+
+    private void UpdateStress()
+    {
+        switch (currentStage)
+        {
+            case 1:
+                // For Stage 1, stress increase is handled in PerformJump
+                break;
+
+            case 2:
+                // For Stage 2, stress increases when the character is moving
+                if (IsMoving())
+                {
+                    IncreaseStressOverTime();
+                }
+                break;
+
+            case 3:
+                IncreaseStressOverTime();
+                break;
+
+                // Add additional cases for more stages if needed
+        }
+    }
+
+
+
+    private void HandlePlayerRespawn()
+    {
+        rb.position = lastCheckpointPosition;
+        rb.velocity = Vector3.zero;
+
+        // Reset stress level
+        stressLevel = 0;
+        targetStressLevel = 0;
+        UpdateStressUI();
+    }
+
+
+    private void IncreaseStressOverTime()
+    {
+        targetStressLevel = Mathf.Clamp(stressLevel + stressIncreaseRate * Time.deltaTime, 0, stressBar.maxValue);
+    }
+
+
+
+    private bool IsMoving()
+    {
+        return horizontalInput != 0;
+    }
+
+    private void UpdateStressUI()
+    {
+        stressBar.value = stressLevel;
+    }
+
+    private void IncreaseStressOnJump()
+    {
+        targetStressLevel = Mathf.Clamp(stressLevel + 5f, 0, stressBar.maxValue);
     }
 
     private void UpdateAnimator()
@@ -128,7 +247,14 @@ public class PlayerController : MonoBehaviour
         isGrounded = false;
         animator.SetTrigger("jump");
         animator.SetBool("isJumping", true);
+
+        if (currentStage == 1)
+        {
+            IncreaseStressOnJump();
+        }
     }
+
+
     private void Land()
     {
         // Set the isJumping boolean to false to trigger the transition to idle or run animation
@@ -153,6 +279,15 @@ public class PlayerController : MonoBehaviour
         isOnWall = false;
         wallJumpCount--;
     }
+
+    private void CollectConsumable(GameObject consumable)
+    {
+        // Handle consumable effects here
+        // For example, reducing stress
+        stressLevel -= 10f; // Adjust this value based on consumable type
+        UpdateStressUI();
+        Destroy(consumable); // Remove consumable from the game
+    }
     void OnCollisionStay(Collision collision)
     {
         // Check if the player is colliding with the ground.
@@ -160,7 +295,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             wallIDs.Clear();
-            Land(); 
+            Land();
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
@@ -195,6 +330,10 @@ public class PlayerController : MonoBehaviour
             // Move the player to the last checkpoint position
             rb.position = lastCheckpointPosition;
             rb.velocity = Vector3.zero;
+        }
+        if (other.gameObject.layer == LayerMask.NameToLayer("Consumable"))
+        {
+            CollectConsumable(other.gameObject);
         }
         if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
         {

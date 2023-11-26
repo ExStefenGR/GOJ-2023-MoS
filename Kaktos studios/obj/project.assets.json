@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
-      "Unity.Postprocessing.Runtime/1.0.0": {
+      "Unity.VisualScripting.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -10,10 +10,77 @@
           "UnityEngine.UI": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Unity.Postprocessing.Runtime.dll": {}
+          "bin/placeholder/Unity.VisualScripting.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Unity.Postprocessing.Runtime.dll": {}
+          "bin/placeholder/Unity.VisualScripting.Core.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Core.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Core.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Core.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Flow/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Flow.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Flow.dll": {}
+        }
+      },
+      "Unity.VisualScripting.Flow.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Core.Editor": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "UnityEditor.TestRunner": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.TestRunner": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.Flow.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.Flow.Editor.dll": {}
+        }
+      },
+      "Unity.VisualScripting.State/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Unity.VisualScripting.Core": "1.0.0",
+          "Unity.VisualScripting.Flow": "1.0.0",
+          "UnityEditor.UI": "1.0.0",
+          "UnityEngine.UI": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.VisualScripting.State.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.VisualScripting.State.dll": {}
         }
       },
       "UnityEditor.TestRunner/1.0.0": {
@@ -67,10 +134,30 @@
     }
   },
   "libraries": {
-    "Unity.Postprocessing.Runtime/1.0.0": {
+    "Unity.VisualScripting.Core/1.0.0": {
       "type": "project",
-      "path": "Unity.Postprocessing.Runtime.csproj",
-      "msbuildProject": "Unity.Postprocessing.Runtime.csproj"
+      "path": "Unity.VisualScripting.Core.csproj",
+      "msbuildProject": "Unity.VisualScripting.Core.csproj"
+    },
+    "Unity.VisualScripting.Core.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Core.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.Core.Editor.csproj"
+    },
+    "Unity.VisualScripting.Flow/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Flow.csproj",
+      "msbuildProject": "Unity.VisualScripting.Flow.csproj"
+    },
+    "Unity.VisualScripting.Flow.Editor/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.Flow.Editor.csproj",
+      "msbuildProject": "Unity.VisualScripting.Flow.Editor.csproj"
+    },
+    "Unity.VisualScripting.State/1.0.0": {
+      "type": "project",
+      "path": "Unity.VisualScripting.State.csproj",
+      "msbuildProject": "Unity.VisualScripting.State.csproj"
     },
     "UnityEditor.TestRunner/1.0.0": {
       "type": "project",
@@ -95,7 +182,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "Unity.Postprocessing.Runtime >= 1.0.0",
+      "Unity.VisualScripting.Core >= 1.0.0",
+      "Unity.VisualScripting.Core.Editor >= 1.0.0",
+      "Unity.VisualScripting.Flow >= 1.0.0",
+      "Unity.VisualScripting.Flow.Editor >= 1.0.0",
+      "Unity.VisualScripting.State >= 1.0.0",
       "UnityEditor.TestRunner >= 1.0.0",
       "UnityEditor.UI >= 1.0.0",
       "UnityEngine.TestRunner >= 1.0.0",
@@ -109,9 +200,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Editor.csproj",
-      "projectName": "Unity.Postprocessing.Editor",
-      "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Editor.csproj",
+      "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
+      "projectName": "Unity.VisualScripting.State.Editor",
+      "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
       "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
       "projectStyle": "PackageReference",
@@ -134,8 +225,20 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj": {
-              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.Postprocessing.Runtime.csproj"
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
+            },
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj"
+            },
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj"
+            },
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj"
+            },
+            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj": {
+              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj"
             },
             "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
               "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
@@ -175,13 +278,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
