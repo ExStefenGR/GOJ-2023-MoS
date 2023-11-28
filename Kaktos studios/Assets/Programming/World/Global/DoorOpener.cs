@@ -7,26 +7,23 @@ public class DoorOpener : MonoBehaviour
     [SerializeField] private float openAngle = 90f;
     [SerializeField] private Transform pivotPoint;
     [SerializeField] private float rotationSpeed = 90f;
-    [SerializeField] private string nextSceneName; // Serialized field for the next scene name.
+    [SerializeField] private string nextSceneName;
 
-    bool isOpen = false;
-    bool isToggling = false;
+    private bool isOpen = false;
+    private bool isToggling = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("submit"))
+        if ((Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Submit")) && !isToggling && IsPlayerNearby())
         {
-            if (!isToggling && IsPlayerNearby())
-            {
-                ToggleDoor();
-            }
+            ToggleDoor();
         }
     }
 
-    bool IsPlayerNearby()
+    private bool IsPlayerNearby()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f); // Adjust the radius based on your needs.
-
+        // You may want to use a specific method to check the player's proximity, such as using a trigger collider or a more sophisticated detection method.
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
         foreach (Collider collider in colliders)
         {
             if (collider.CompareTag("Player"))
@@ -34,14 +31,13 @@ public class DoorOpener : MonoBehaviour
                 return true;
             }
         }
-
         return false;
     }
 
-    void ToggleDoor()
+    private void ToggleDoor()
     {
-        isToggling = true;
         isOpen = !isOpen;
+        isToggling = true;
 
         if (isOpen)
         {
@@ -53,31 +49,42 @@ public class DoorOpener : MonoBehaviour
         }
     }
 
-    void OpenDoor()
+    private void OpenDoor()
     {
         Quaternion targetRotation = Quaternion.Euler(0f, openAngle, 0f);
+        StartCoroutine(RotateDoor(targetRotation, LoadNextScene)); // LoadNextScene called when door fully open.
+    }
+
+    private void CloseDoor()
+    {
+        Quaternion targetRotation = Quaternion.Euler(0f, 0f, 0f);
         StartCoroutine(RotateDoor(targetRotation, () => isToggling = false));
     }
 
-    void CloseDoor()
-    {
-        Quaternion targetRotation = Quaternion.Euler(0f, 0f, 0f);
-        StartCoroutine(RotateDoor(targetRotation, LoadNextScene)); // LoadNextScene is called when the door is fully open.
-    }
-
-    IEnumerator RotateDoor(Quaternion targetRotation, System.Action onComplete = null)
+    private IEnumerator RotateDoor(Quaternion targetRotation, System.Action onComplete = null)
     {
         while (Quaternion.Angle(transform.rotation, targetRotation) > 0.01f)
         {
-            transform.RotateAround(pivotPoint.position, Vector3.up, rotationSpeed * Time.deltaTime);
+            // Calculate the angle to rotate in this frame
+            float step = rotationSpeed * Time.deltaTime;
+            // Rotate around the pivot point
+            transform.RotateAround(pivotPoint.position, Vector3.up, step);
+
+            // Check if the rotation is close enough to the target
+            if (Quaternion.Angle(transform.rotation, targetRotation) <= step)
+            {
+                // Directly set the rotation to the target to prevent overshooting
+                transform.rotation = targetRotation;
+                break;
+            }
+
             yield return null;
         }
 
-        // Check if a callback function is provided and call it.
+        // Invoke the completion callback, if any
         onComplete?.Invoke();
     }
-
-    void LoadNextScene()
+    private void LoadNextScene()
     {
         if (!string.IsNullOrEmpty(nextSceneName))
         {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -44,17 +45,33 @@ public class PlayerController : MonoBehaviour
     //Player Spawn/Checkpoint
     private Vector3 lastCheckpointPosition;
 
+    //post process
+    private PostProcessVolume postProcessVolume;
+    private ChromaticAberration chromaticAberration;
+
+    private Vignette vignette;
+
     void Start()
     {
         rb = GetComponentInChildren<Rigidbody>();
-        cam = GetComponentInChildren<Camera>(); // This will find the Camera component in the children of the GameObject.
+        cam = GetComponentInChildren<Camera>();
         animator = GetComponentInChildren<Animator>();
+        postProcessVolume = cam.GetComponent<PostProcessVolume>();
         wallJumpCount = maxWallJumps;
         lastCheckpointPosition = transform.position;
 
         quickRigRef = transform.Find("QuickRigCharacter_Reference");
         quickRigGuides = transform.Find("QuickRigCharacter_Guides");
         quickRigCtrlReference = transform.Find("QuickRigCharacter_Ctrl_Reference");
+
+        if (postProcessVolume.profile.TryGetSettings(out chromaticAberration))
+        {
+            chromaticAberration.active = false; // Initially disable the effect
+        }
+        if (postProcessVolume.profile.TryGetSettings(out vignette))
+        {
+            vignette.active = false; // Initially disable the effect
+        }
 
         InitializeStressBar();
         DetermineCurrentStage();
@@ -104,10 +121,28 @@ public class PlayerController : MonoBehaviour
         UpdateStress(); // Update stress based on the current stage
 
         // Check if stress level reaches or exceeds 100 and handle player respawn
-        if (Mathf.Approximately(stressLevel, 100f) || stressLevel > 99.99f)
+        if (Mathf.Approximately(stressLevel, 100f) || stressLevel > 99.9f)
         {
             HandlePlayerRespawn();
         }
+
+        if (stressLevel > 30)
+        {
+            // Chromatic aberration reaches maximum intensity at stress level 60
+            chromaticAberration.intensity.value = Mathf.Clamp((stressLevel - 30) / 30.0f, 0, 1);
+            chromaticAberration.active = true;
+
+            // Vignette intensity interpolates between 0.100 and 0.326
+            float vignetteIntensity = 0.100f + ((stressLevel - 30) / 30.0f) * (0.326f - 0.100f);
+            vignette.intensity.value = Mathf.Clamp(vignetteIntensity, 0.100f, 0.326f);
+            vignette.active = true;
+        }
+        else
+        {
+            chromaticAberration.active = false;
+            vignette.active = false;
+        }
+
     }
 
 
@@ -280,14 +315,6 @@ public class PlayerController : MonoBehaviour
         wallJumpCount--;
     }
 
-    private void CollectConsumable(GameObject consumable)
-    {
-        // Handle consumable effects here
-        // For example, reducing stress
-        stressLevel -= 10f; // Adjust this value based on consumable type
-        UpdateStressUI();
-        Destroy(consumable); // Remove consumable from the game
-    }
     void OnCollisionStay(Collision collision)
     {
         // Check if the player is colliding with the ground.
@@ -331,10 +358,6 @@ public class PlayerController : MonoBehaviour
             rb.position = lastCheckpointPosition;
             rb.velocity = Vector3.zero;
         }
-        if (other.gameObject.layer == LayerMask.NameToLayer("Consumable"))
-        {
-            CollectConsumable(other.gameObject);
-        }
         if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
         {
             if (other.TryGetComponent<ZoomOutTrigger>(out var zoomOutTrigger) && !zoomOutTrigger.IsTriggered)
@@ -345,6 +368,23 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        if (other.CompareTag("pickup"))
+        {
+            PickupItem(other.gameObject);
+        }
+    }
+
+    // Reduce the player's stress level
+    private void PickupItem(GameObject pickupItem)
+    {
+        float stressReduction = 30f;
+
+        stressLevel = Mathf.Max(0, stressLevel - stressReduction);
+        targetStressLevel = stressLevel;
+
+        UpdateStressUI();
+
+        Destroy(pickupItem);
     }
 
     IEnumerator ZoomOutEffect(float TargetFOV, float TargetDuration, float TargetDistance)
