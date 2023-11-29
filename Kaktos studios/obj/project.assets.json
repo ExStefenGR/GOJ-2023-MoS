@@ -76,9 +76,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "UnityEditor.TestRunner >= 1.0.0",
       "UnityEditor.UI >= 1.0.0",
-      "UnityEngine.TestRunner >= 1.0.0",
       "UnityEngine.UI >= 1.0.0"
     ]
   },
@@ -89,9 +87,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj",
-      "projectName": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection",
-      "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj",
+      "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TextMeshPro.csproj",
+      "projectName": "Unity.TextMeshPro",
+      "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TextMeshPro.csproj",
       "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
       "projectStyle": "PackageReference",
@@ -114,14 +112,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
-              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
-            },
             "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
               "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
-            },
-            "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
-              "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
             },
             "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
               "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"

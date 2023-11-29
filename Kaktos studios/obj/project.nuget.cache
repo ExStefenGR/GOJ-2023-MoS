@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j0scClw4cS/Apa3DzGkQrX40nbnfXEawC8MtHsDdtf/Qpyec05+2hpSiyRdKhhgtWGXDeNMgfwe0jc6dmdPByg==",
+  "dgSpecHash": "EJgQr9rdkMUw5jBBLTKKrLzlB6whVAeyWvVLPpSFMqm1stEVgsjPlNP4mQ65FFGWA2vcqLFZoL23MSVxJCrDeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj",
+  "projectFilePath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.TextMeshPro.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
