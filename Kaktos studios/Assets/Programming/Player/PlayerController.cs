@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         // Check if stress level reaches or exceeds 100 and handle player respawn
         if (Mathf.Approximately(stressLevel, 100f) || stressLevel > 99.9f)
         {
-            HandlePlayerRespawn();
+            SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(currentStage).name);
         }
 
         if (stressLevel > 30)
@@ -176,19 +176,6 @@ public class PlayerController : MonoBehaviour
 
                 // Add additional cases for more stages if needed
         }
-    }
-
-
-
-    public void HandlePlayerRespawn()
-    {
-        rb.position = lastCheckpointPosition;
-        rb.velocity = Vector3.zero;
-
-        // Reset stress level
-        stressLevel = 0;
-        targetStressLevel = 0;
-        UpdateStressUI();
     }
 
 
@@ -354,9 +341,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("DeadZone"))
         {
-            // Move the player to the last checkpoint position
-            rb.position = lastCheckpointPosition;
-            rb.velocity = Vector3.zero;
+            SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(currentStage).name);
         }
         if (other.gameObject.layer == LayerMask.NameToLayer("ZoomOut"))
         {
