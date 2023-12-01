@@ -5,6 +5,7 @@ public class OptimizedVisibilityScript : MonoBehaviour
     private Camera mainCamera;
     private Renderer[] childRenderers;
     private bool[] wasVisible;
+    public float visibilityBuffer = 1.0f; // Buffer for visibility check
 
     void Start()
     {
@@ -22,7 +23,11 @@ public class OptimizedVisibilityScript : MonoBehaviour
             if (childRenderers[i] == null)
                 continue;
 
-            bool isVisible = GeometryUtility.TestPlanesAABB(planes, childRenderers[i].bounds);
+            // Create a slightly larger bounds for the visibility check
+            Bounds expandedBounds = childRenderers[i].bounds;
+            expandedBounds.Expand(visibilityBuffer);
+
+            bool isVisible = GeometryUtility.TestPlanesAABB(planes, expandedBounds);
 
             if (childRenderers[i].gameObject.activeSelf != isVisible)
             {

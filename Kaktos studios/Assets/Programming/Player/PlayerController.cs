@@ -83,15 +83,15 @@ public class PlayerController : MonoBehaviour
 
         if (sceneName == "Stage-One")
         {
-            currentStage = 1;
+            currentStage = 2;
         }
         else if (sceneName == "Stage-Two")
         {
-            currentStage = 2;
+            currentStage = 3;
         }
         else if (sceneName == "Stage-Three")
         {
-            currentStage = 3;
+            currentStage = 4;
         }
         else
         {
@@ -158,11 +158,11 @@ public class PlayerController : MonoBehaviour
     {
         switch (currentStage)
         {
-            case 1:
+            case 2:
                 // For Stage 1, stress increase is handled in PerformJump
                 break;
 
-            case 2:
+            case 3:
                 // For Stage 2, stress increases when the character is moving
                 if (IsMoving())
                 {
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
                 }
                 break;
 
-            case 3:
+            case 4:
                 IncreaseStressOverTime();
                 break;
 
@@ -270,7 +270,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("jump");
         animator.SetBool("isJumping", true);
 
-        if (currentStage == 1)
+        if (currentStage == 2)
         {
             IncreaseStressOnJump();
         }
@@ -400,5 +400,11 @@ public class PlayerController : MonoBehaviour
         cam.fieldOfView = TargetFOV; // Ensure the FOV is set to the target at the end
         cam.transform.localPosition = targetPosition; // Ensure the camera is set to the target position at the end
         isZoomingOut = false;
+    }
+    // Stage3
+    public void IncreaseStress(float amount)
+    {
+        stressLevel = Mathf.Clamp(stressLevel + amount, 0, 100);
+        UpdateStressUI();
     }
 }

@@ -293,10 +293,13 @@
 "Assets/Programming/PrefabCode/MovingPlatformController.cs"
 "Assets/Programming/World/Global/DoorOpener.cs"
 "Assets/Programming/World/Global/MapManager.cs"
+"Assets/Programming/World/MainMenu/FadeInMultipleRawImages.cs"
+"Assets/Programming/World/MainMenu/MainMenu.cs"
 "Assets/Programming/World/Stage1/SkullFollowPlayer.cs"
 "Assets/Programming/World/Stage1/ZoomOutTrigger.cs"
 "Assets/Programming/World/Stage2/SpiderController.cs"
 "Assets/Programming/World/Stage2/WallCrush.cs"
+"Assets/Programming/World/Stage3/GhostStress.cs"
 -langversion:9.0
 
 /deterministic

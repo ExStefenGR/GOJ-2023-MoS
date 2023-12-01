@@ -64,9 +64,11 @@
             "name": "AudioBehaviour",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -74,9 +76,11 @@
           {
             "name": "AudioClip",
             "scenes": [
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -85,9 +89,11 @@
             "name": "AudioListener",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -101,9 +107,11 @@
           {
             "name": "AudioSource",
             "scenes": [
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -111,9 +119,11 @@
           {
             "name": "SampleClip",
             "scenes": [
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -139,9 +149,11 @@
             "name": "Camera",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -164,7 +176,9 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/Stage-Three.unity"
+              "Assets/Scenes/Main-Menu.unity",
+              "Assets/Scenes/Stage-Three.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -185,9 +199,11 @@
             "name": "EditorExtension",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -202,9 +218,11 @@
             "name": "GameObject",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -231,9 +249,11 @@
             "name": "LevelGameManager",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -263,7 +283,8 @@
             "name": "LightingSettings",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
-              "Assets/Scenes/Stage-One.unity"
+              "Assets/Scenes/Stage-One.unity",
+              "Assets/Scenes/Stage-Three.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -272,9 +293,11 @@
             "name": "LightmapSettings",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -289,9 +312,11 @@
             "name": "Material",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -333,9 +358,11 @@
             "name": "MonoBehaviour",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -350,9 +377,11 @@
             "name": "MonoScript",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -361,9 +390,11 @@
             "name": "NamedObject",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -396,9 +427,11 @@
             "name": "RectTransform",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -413,9 +446,11 @@
             "name": "RenderSettings",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -448,9 +483,11 @@
             "name": "Shader",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -493,9 +530,11 @@
             "name": "Sprite",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -812,7 +851,8 @@
           {
             "name": "SphereCollider",
             "scenes": [
-              "Assets/Scenes/Stage-One.unity"
+              "Assets/Scenes/Stage-One.unity",
+              "Assets/Scenes/Stage-Three.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1005,7 +1045,10 @@
         "dependencies": [
           {
             "name": "Font",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Main-Menu.unity",
+              "Assets/Scenes/Thanks.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1048,9 +1091,11 @@
             "name": "Canvas",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1065,9 +1110,11 @@
             "name": "CanvasRenderer",
             "scenes": [
               "Assets/Scenes/Lobby.unity",
+              "Assets/Scenes/Main-Menu.unity",
               "Assets/Scenes/Stage-One.unity",
               "Assets/Scenes/Stage-Three.unity",
-              "Assets/Scenes/Stage-Two.unity"
+              "Assets/Scenes/Stage-Two.unity",
+              "Assets/Scenes/Thanks.unity"
             ],
             "dependencyType": 0,
             "icon": null
