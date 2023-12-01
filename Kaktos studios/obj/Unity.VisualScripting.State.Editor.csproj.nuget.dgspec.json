@@ -1,100 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.Editor.csproj": {}
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj": {}
   },
   "projects": {
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj",
-        "projectName": "Unity.VisualScripting.Core.Editor",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj",
         "projectName": "Unity.VisualScripting.Core",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -119,52 +61,52 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.Editor.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.Editor.csproj",
-        "projectName": "Unity.VisualScripting.Flow.Editor",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.Editor.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj",
+        "projectName": "Unity.VisualScripting.Core.Editor",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -189,40 +131,46 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj",
         "projectName": "Unity.VisualScripting.Flow",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -247,58 +195,58 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.Editor.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.Editor.csproj",
-        "projectName": "Unity.VisualScripting.State.Editor",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.Editor.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj",
+        "projectName": "Unity.VisualScripting.Flow.Editor",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.Editor.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.Editor.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.Editor.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
-              },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -323,43 +271,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj",
         "projectName": "Unity.VisualScripting.State",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.State.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Core.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/Unity.VisualScripting.Flow.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -384,34 +338,122 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
+        "projectName": "Unity.VisualScripting.State.Editor",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.Editor.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Core.Editor.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.Flow.Editor.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\Unity.VisualScripting.State.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
+              },
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj",
         "projectName": "UnityEditor.TestRunner",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
               }
             }
           }
@@ -436,40 +478,46 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj",
         "projectName": "UnityEditor.UI",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.UI.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.UI.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEditor.TestRunner.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEditor.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj"
               },
-              "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
-                "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj"
+              "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
+                "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj"
               }
             }
           }
@@ -494,26 +542,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj",
         "projectName": "UnityEngine.TestRunner",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.TestRunner.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -542,26 +596,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj": {
+    "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj",
         "projectName": "UnityEngine.UI",
-        "projectPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/UnityEngine.UI.csproj",
-        "packagesPath": "/home/stefen/.nuget/packages/",
-        "outputPath": "/home/stefen/Documents/GameDev/Game-Jam-2023-TBC/Kaktos studios/obj/",
+        "projectPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\UnityEngine.UI.csproj",
+        "packagesPath": "C:\\Users\\Stefen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefen\\source\\repos\\GOJ-2023-MoS\\Kaktos studios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/stefen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Stefen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -590,7 +650,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
